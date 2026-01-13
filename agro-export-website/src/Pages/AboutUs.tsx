@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "../assets/logo.jpg";
-import aboutHero from "../assets/crops.jpg";
+import aboutHero from "../assets/background.png";
 import companyImage from "../assets/coffee raw (1).jpg";
 
 //icons
@@ -35,6 +35,7 @@ const AboutUs: React.FC = () => {
               <a href="/" className="hover:opacity-80">{t("nav.home")}</a>
               <a href="/products" className="hover:opacity-80">{t("nav.products")}</a>
               <a href="/about-us" className="hover:opacity-80">{t("nav.about")}</a>
+              <a href="/gallery" className="hover:opacity-80">{t("nav.gallery")}</a>
               <a href="#contact" className="hover:opacity-80">{t("nav.contact")}</a>
             </nav>
 
@@ -62,12 +63,12 @@ const AboutUs: React.FC = () => {
       </section>
 
       {/* ================= COMPANY OVERVIEW ================= */}
-      <section className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
-        <div>
+      <section className="max-w-7xl mx-auto px-6 py-12 md:py-16 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+        <div className="order-2 md:order-1">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">{t("about.title")}</h2>
-          <p className="text-gray-700 leading-relaxed">{t("about.description")}</p>
+          <p className="text-gray-700 leading-relaxed text-base md:text-lg">{t("about.description")}</p>
         </div>
-        <div className="w-full h-72 md:h-96">
+        <div className="order-1 md:order-2 w-full h-64 sm:h-72 md:h-96">
           <img
             src={companyImage}
             alt="HAC Export Operations"
@@ -270,11 +271,11 @@ const AboutUs: React.FC = () => {
               {t("footer.newsletter.desc")}
             </p>
 
-            <form className="flex gap-2">
+            <form className="flex flex-col sm:flex-row gap-3 sm:gap-2">
               <input
                 type="email"
                 placeholder={t("footer.newsletter.placeholder")}
-                className="flex-1 px-4 py-2 rounded-md focus:outline-none text-gray-900"
+                className="flex-1 px-4 py-2 rounded-md focus:outline-none text-gray-900 w-full"
               />
               <button
                 type="submit"

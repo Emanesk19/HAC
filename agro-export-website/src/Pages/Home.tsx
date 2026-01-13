@@ -33,6 +33,7 @@ import linkedInIcon from "../assets/Icons/linkedin.png";
 function App() {
   const { t, i18n } = useTranslation();
   const { theme, toggleTheme } = useTheme();
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   const toggleLanguage = () => {
     i18n.changeLanguage(i18n.language === "en" ? "ar" : "en");
@@ -91,13 +92,14 @@ function App() {
         {/* ================= NAVBAR ================= */}
         {/* Navbar */}
         <header className="absolute top-0 left-0 w-full z-20">
-          <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between text-white">
             <img src={logo} alt="HAC Export & Import Logo" className="h-10 md:h-16 max-w-[160px] md:max-w-[200px] object-contain" />
 
             <nav className="hidden md:flex gap-6 font-medium">
               <a href="/" className="hover:opacity-80">{t("nav.home")}</a>
               <a href="/products" className="hover:opacity-80">{t("nav.products")}</a>
               <a href="/about-us" className="hover:opacity-80">{t("nav.about")}</a>
+              <a href="/gallery" className="hover:opacity-80">{t("nav.gallery")}</a>
               <a href="#contact" className="hover:opacity-80">{t("nav.contact")}</a>
             </nav>
 
@@ -115,20 +117,64 @@ function App() {
               >
                 {theme === "light" ? "🌙" : "☀️"}
               </button>
+
+              {/* Mobile menu button */}
+              <button
+                type="button"
+                className="md:hidden ml-1 inline-flex items-center justify-center p-2 rounded-md bg-white/10 hover:bg-white/20 focus:outline-none"
+                aria-label="Toggle navigation menu"
+                onClick={() => setIsMobileNavOpen((prev) => !prev)}
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="h-5 w-5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  {isMobileNavOpen ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
             </div>
           </div>
+
+          {/* Mobile nav panel */}
+          {isMobileNavOpen && (
+            <div className="md:hidden bg-black/80 backdrop-blur-sm border-t border-white/10">
+              <div className="max-w-7xl mx-auto px-4 py-3 space-y-2">
+                <a href="/" className="block text-white py-1 hover:opacity-80">
+                  {t("nav.home")}
+                </a>
+                <a href="/products" className="block text-white py-1 hover:opacity-80">
+                  {t("nav.products")}
+                </a>
+                <a href="/about-us" className="block text-white py-1 hover:opacity-80">
+                  {t("nav.about")}
+                </a>
+                <a href="#contact" className="block text-white py-1 hover:opacity-80">
+                  {t("nav.contact")}
+                </a>
+              </div>
+            </div>
+          )}
         </header>
 
         {/* ================= HERO CONTENT ================= */}
-        <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-90px)] text-center">
-          <div className="max-w-3xl px-6 text-white">
-            {/* Single-line Hero Title */}
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight whitespace-nowrap overflow-ellipsis mx-auto">
+        <div className="relative z-10 flex items-center justify-center min-h-[calc(100vh-90px)] text-center px-4">
+          <div className="w-full max-w-2xl sm:max-w-3xl text-white">
+            {/* Hero Title */}
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold leading-tight mx-auto break-words">
               {t("hero.title")}
             </h1>
 
-            {/* Single-line Hero Subtitle */}
-            <p className="mt-3 text-lg md:text-xl text-gray-200 leading-snug whitespace-nowrap overflow-ellipsis mx-auto">
+            {/* Hero Subtitle */}
+            <p className="mt-3 text-sm sm:text-base md:text-xl text-gray-200 leading-snug mx-auto max-w-2xl">
               {t("hero.subtitle")}
             </p>
 
@@ -189,20 +235,18 @@ function App() {
             </a>
           </div>
 
-          {/* ================= IMAGE WITH CENTERED BLUE-SHADOW CARD ================= */}
-          <div className="md:col-span-5 flex justify-center md:justify-end relative">
-            {/* Wider Frame with section background and blue shadow */}
+          {/* ================= IMAGE WITH RESPONSIVE CARD ================= */}
+          <div className="md:col-span-5 flex justify-center md:justify-end relative mt-8 md:mt-0">
             <div
-              className="w-[460px] h-[360px] bg-gray-50 rounded-xl relative"
+              className="w-full max-w-md md:max-w-none md:w-[460px] h-64 md:h-[360px] bg-gray-50 rounded-xl overflow-hidden"
               style={{
                 boxShadow: "0 20px 40px rgba(40,46,89,0.4)", // blue shadow
               }}
             >
-              {/* Image perfectly centered inside the frame */}
               <img
                 src={coffeeRaw}
                 alt="Agro Export Operations"
-                className="absolute inset-0 m-auto w-[440px] h-[340px] object-cover rounded-xl"
+                className="w-full h-full object-cover rounded-xl"
               />
             </div>
           </div>
@@ -548,11 +592,11 @@ function App() {
               {t("footer.newsletter.desc")}
             </p>
 
-            <form className="flex gap-2">
+            <form className="flex flex-col sm:flex-row gap-3 sm:gap-2">
               <input
                 type="email"
                 placeholder={t("footer.newsletter.placeholder")}
-                className="flex-1 px-4 py-2 rounded-md focus:outline-none text-gray-900"
+                className="flex-1 px-4 py-2 rounded-md focus:outline-none text-gray-900 w-full"
               />
               <button
                 type="submit"
