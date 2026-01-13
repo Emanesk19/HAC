@@ -1,0 +1,229 @@
+{
+  "title": "Agro Export Company",
+  "home": "Home",
+  "products": "Products",
+  "gallery": "Gallery",
+  "contact": "Contact",
+  "heroTitle": "Quality Agricultural Products Exported Worldwide",
+  "heroDescription": "We provide premium sesame, coffee, pulses, and teff to international buyers.",
+  "exploreProducts": "Explore Products",
+  "ourProducts": "Our Products",
+  "sesame": "Sesame Seeds",
+  "coffee": "Coffee",
+  "pulses": "Pulses & Beans",
+  "teff": "Teff",
+
+  "hero": {
+    "title": "Premium Ethiopian Agricultural Exports",
+    "subtitle": "Supplying premium Ethiopian coffee, sesame seeds, pulses, and grains to international and Arab buyers.",
+    "ctaPrimary": "View Products",
+    "ctaSecondary": "Request a Quote"
+  },
+  
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About Us",
+    "contact": "Contact",
+    "inquiry": "Send Inquiry"
+  },
+
+  "about": {
+    "label": "About Us",
+    "title": "Who We Are",
+    "description": "HAC Export and Import is a premier Ethiopian agricultural exporter dedicated to providing high-quality sesame, coffee, pulses, and teff to Arab and international buyers. Our products are carefully sourced from the best regions, graded meticulously, and packaged according to international export standards. We pride ourselves on delivering consistency, reliability, and transparency in every shipment, ensuring our partners receive only the finest commodities. With years of experience and a commitment to excellence, HAC Export and Import continues to grow as a trusted supplier in global agricultural markets.",
+    "missionVisionTitle": "Our Mission & Vision",
+    "missionTitle": "Mission",
+    "missionDesc": "To provide premium Ethiopian agricultural products to international markets with consistent quality, reliability, and transparency.",
+    "visionTitle": "Vision",
+    "visionDesc": "To become a globally recognized and trusted exporter of Ethiopian agricultural commodities.",
+    "valuesTitle": "Core Values",
+    "valuesIntegrity": "Integrity",
+    "valuesQuality": "Quality",
+    "valuesReliability": "Reliability",
+    "valuesSustainability": "Sustainability",
+  "whatWeDoTitle": "What We Do",
+    "whatWeDoDesc": "At HAC Export & Import, we manage the entire supply chain to ensure the highest quality Ethiopian agricultural products reach international markets.",
+
+    "sourcingTitle": "Sourcing",
+    "sourcingDesc": "We work directly with trusted farmers across Ethiopia, carefully selecting the best produce from Humera, Wollega, Yirgacheffe, Sidamo, and other regions.",
+
+    "processingTitle": "Processing",
+    "processingDesc": "Our state-of-the-art facilities clean, sort, and package products according to international standards to maintain quality and freshness.",
+
+    "exportTitle": "Export",
+    "exportDesc": "We handle all export documentation, logistics, and delivery to ensure timely and reliable shipment to our global clients."
+  },
+
+  "stats": {
+    "yearsExperience": "Years Experience",
+    "countriesServed": "Countries Served",
+    "tonsExported": "Tons Exported",
+    "qualityFocus": "Quality Focus"
+  },
+
+  "products": {
+    "sesame": "Sesame",
+    "coffee": "Coffee",
+    "pulses": "Pulses & Beans",
+    "teff": "Teff"
+  },
+
+  "sections": {
+    "products": {
+      "label": "Products",
+      "title": "Premium Agricultural Commodities",
+      "subtitle": "Carefully sourced, export-ready Ethiopian products meeting global standards"
+    },
+    "whyChooseUs": {
+      "label": "Why Choose Us",
+      "title": "A Reliable Partner in Agricultural Exports",
+      "desc": "We combine quality sourcing, export expertise, and reliable logistics to deliver Ethiopian agricultural products to global markets with consistency and trust."
+    },
+    "markets": {
+      "label": "Markets We Serve",
+      "title": "Supplying Global Markets with Confidence",
+      "desc": "We export Ethiopian agricultural commodities to key international markets, ensuring consistent quality and reliable delivery.",
+    "regions": {
+  "middleEast": {
+    "name": "Middle East",
+    "desc": "UAE, Saudi Arabia, Oman & GCC countries"
+  },
+  "europe": {
+    "name": "Europe",
+    "desc": "Germany, Netherlands, Italy & more"
+  },
+  "asia": {
+    "name": "Asia",
+    "desc": "China, India & emerging Asian markets"
+  },
+  "africa": {
+    "name": "Africa",
+    "desc": "Regional trade across African markets"
+  }
+}
+
+    },
+    "certifications": {
+    "label": "Certifications & Compliance",
+    "title": "Meeting International Export Standards",
+    "desc": "Our operations follow strict quality, safety, and compliance procedures to meet international export requirements.",
+    "items": {
+      "iso": "ISO Quality Management",
+      "haccp": "HACCP Food Safety",
+      "phytosanitary": "Phytosanitary Certification",
+      "inspection": "Export Quality Inspection"
+    }
+    }
+  },
+
+  "cards": {
+    "qualityControl": {
+      "title": "Strict Quality Control",
+      "desc": "Every shipment is carefully inspected and graded to meet international standards."
+    },
+    "sourcingNetwork": {
+      "title": "Trusted Sourcing Network",
+      "desc": "We work directly with reliable farmers and suppliers across Ethiopia."
+    },
+    "exportExpertise": {
+      "title": "Export Expertise",
+      "desc": "Experienced handling of documentation, packaging, and export procedures."
+    },
+    "onTimeDelivery": {
+      "title": "Reliable Execution",
+      "desc": "Committed to efficient delivery processes and dependable execution from sourcing to shipment."
+    }
+  },
+  "whatWeDo": {
+  "title": "What We Do",
+  "subtitle": "From sourcing to export, we ensure quality every step of the way.",
+  "sourcingTitle": "Sourcing",
+  "sourcingDesc": "We work directly with trusted farmers across Ethiopia to source the finest agricultural products.",
+  "processingTitle": "Processing",
+  "processingDesc": "Our facilities carefully process, sort, and grade products according to international standards.",
+  "exportTitle": "Export",
+  "exportDesc": "We handle all export documentation and logistics to deliver products safely to global markets."
+},
+  "footer": {
+  "description": "HAC Export & Import delivers premium Ethiopian agricultural products worldwide. Quality, reliability, and excellence in every shipment.",
+  "quickLinks": "Quick Links",
+  "contact": "Contact",
+  "address": "Addis Ababa, Ethiopia",
+  "newsletter": {
+    "title": "Stay Updated",
+    "desc": "Subscribe for updates about our products & offers.",
+    "placeholder": "Email address",
+    "button": "Subscribe"
+  }
+},
+
+  "productsPage": {
+    "heroLabel": "Export-ready Ethiopian products",
+    "heroTitle": "Our Products",
+    "heroSubtitle": "Export-ready Ethiopian agricultural commodities.",
+
+    "productsIntro": "We source directly from key Ethiopian growing regions, apply consistent grading and quality control, and prepare each shipment according to international export standards with options for buyer-specific specifications.",
+
+    "sesameTitle": "Sesame Seeds – All Grades",
+    "sesameGrades": "Natural white sesame seeds, export grades for bakery, tahini, oil crushing and confectionery.",
+    "sesameOrigin": "Main origins: Humera, Wollega and other emerging producing areas.",
+    "sesameUsage": "Available in bulk bags and containerized shipments for food industry, oil mills and re-packers.",
+
+    "coffeeTitle": "Ethiopian Coffee – Grades 1–4",
+    "coffeeGrades": "Washed and natural Arabica coffee, export grades 1–4.",
+    "coffeeOrigin": "Key origins: Yirgacheffe, Sidamo, Jimma, Guji and additional recognized coffee regions.",
+    "coffeeFlavor": "Profiles suited for specialty roasters, commercial blends and private label brands.",
+
+    "pulsesTitle": "Pulses & Beans",
+    "pulsesVarieties": "Red kidney beans, chickpeas, fava beans, soybeans, mung beans, navy beans and pinto beans.",
+    "pulsesUsage": "Cleaned and graded pulses suitable for packing, canning and food processing.",
+    "pulsesPacking": "Packed in export-ready bags with customized labeling for buyer requirements.",
+
+    "teffTitle": "Teff – Red & White",
+    "teffTypes": "Premium red and white teff for traditional and health-focused markets.",
+    "teffOrigin": "Sourced from highland regions known for consistent teff quality.",
+    "teffUsage": "Ideal for injera, gluten-free baking and health food applications.",
+
+    "sourcingTitle": "Sourcing & Grading",
+    "sourcingDesc": "Our team manages sourcing, cleaning and grading to align each shipment with buyer specifications and destination requirements.",
+    "sourcingPoints": {
+      "regions": "Direct sourcing from established growing regions across Ethiopia.",
+      "grading": "Grading based on moisture, purity, defect count and size according to export standards.",
+      "traceability": "Lot-based documentation to support traceability and quality verification.",
+      "packaging": "Export-standard packaging suitable for sea freight and long-distance handling."
+    },
+
+    "galleryTitle": "Product & Operations Gallery",
+    "gallerySubtitle": "A glimpse of our products, grading operations, storage and export preparation.",
+
+    "companyProfileTitle": "Company Profile for Buyers",
+    "companyProfileDesc": "Download our company profile to share internally with your procurement and quality teams.",
+    "companyProfileDownload": "Download Company Profile (PDF)",
+    "companyProfileNote": "You can place your official company profile file at /public/company-profile.pdf.",
+
+    "certificatesTitle": "Certificates & Licenses",
+    "certificatesSubtitle": "We operate in line with international quality, food safety and export compliance requirements.",
+
+    "inquiryTitle": "Request a Quote",
+    "inquirySubtitle": "Share your product, quantity and destination details so our team can respond with a tailored offer.",
+    "inquirySuccess": "Thank you for your inquiry. Our team will contact you shortly.",
+
+    "form": {
+      "name": "Full name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "WhatsApp / Phone",
+      "product": "Product",
+      "productPlaceholder": "Select a product",
+      "otherProduct": "Other product",
+      "quantity": "Required quantity (MT)",
+      "destination": "Destination port",
+      "message": "Additional details (grade, packing, delivery time)",
+      "submit": "Send Inquiry"
+    },
+
+    "contactAlt": "Or contact us directly via:"
+  }
+
+}
